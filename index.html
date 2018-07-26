@@ -11,8 +11,8 @@
 	<link rel='icon' type='image/png' href='images/favicon.png' />
 	<style>
 	@font-face {
-	    font-family: noodle;
-	    src: url(fonts/big_noodle_titling.ttf);
+		font-family: noodle;
+		src: url(fonts/big_noodle_titling.ttf);
 	}
 	.uk-navbar-container {
 		background-color: #121212!important;
@@ -27,7 +27,7 @@
 		color: #ece300;
 	}
 	a {
-		font-size:18px!important;
+		font-size:24px!important;
 	}
 	img {
 		width: 100%;
@@ -66,6 +66,12 @@
 	#nav {
 		border-bottom: 1px solid #9c9eab;
 	}
+	.goal {
+		font-family: noodle;
+		text-align: center;
+		color:white;
+		font-size:18px;
+	}
 </style>
 </head>
 <body>
@@ -79,17 +85,20 @@
 		<nav id="nav" class="uk-navbar-container" uk-navbar>
 			<div class="uk-width-1-1">
 				<ul class="uk-navbar-nav">
-					<li class="uk-width-2-5@m uk-hidden-touch">
-						<a href ="#mainPic" uk-scroll><i style="font-size: 28px; font-family: noodle;">Toast House</i></a>
+					<li class="uk-width-1-3@m uk-hidden-touch">
+						<a href ="#mainPic" uk-scroll><i style="font-size: 55px; font-family: noodle;">Toast House</i></a>
 					</li>
-					<li class="uk-width-1-5 uk-hidden-touch">
+					<li class="uk-width-1-6 uk-hidden-touch">
 						<a href="#aboutUs" uk-scroll='{"offset":100}' style="font-family:noodle;">About Us</a>
 					</li>
-					<li class="uk-width-1-5 uk-hidden-touch">
+					<li class="uk-width-1-6 uk-hidden-touch">
+						<a href="#goals" uk-scroll='{"offset":100}' style="font-family:noodle;">Our Goals</a>
+					</li>
+					<li class="uk-width-1-6 uk-hidden-touch">
 						<a href="#spec" uk-scroll='{"offset":100}' style="font-family:noodle;">Our Specialities</a>
 					</li>
-					<li class=" uk-width-1-5 uk-hidden-touch" style="font-family:noodle;">
-						<a href="#footer" uk-scroll>Contact Us</a>
+					<li class=" uk-width-1-6 uk-hidden-touch" >
+						<a href="#footer" uk-scroll style="font-family:noodle;">Contact Us</a>
 					</li>
 				</ul>
 			</div>
@@ -99,26 +108,63 @@
 	<div style="margin:0 auto">
 		<div class="uk-section uk-dark">
 			<div uk-scrollspy="cls: uk-animation-fade; target: > div >; delay: 500; repeat: true">
-				<div class="uk-width-1-2@m uk-width-1-1@s uk-float-right">
+				<div class="uk-width-1-3@m uk-float-left uk-hidden-touch">
+					<img src="images/pencils1.jpg" />
+				</div>
+				<div class="uk-width-1-3@m uk-width-1-1@s uk-float-left">
+					<h2 id="aboutUs" class="uk-text-center">About Us</h2>
+					<hr>
+					<div>
+						<p>
+							Toast.House is a full service web design agency based in Edinburgh.
+						</p>
+						<p> We design and create engaging and dynamic websites which are fully responsive on any mobile device, our aim is to build websites
+							that exceed our clients’ expectations every time.
+						</p>
+					</div>
+				</div>
+				<div class="uk-width-1-3@m uk-float-right uk-hidden-touch">
+					<img src="images/pencils2.jpg" />
+				</div>
+				<div class="uk-width-1-1 uk-float-right uk-hidden-notouch">
 					<img src="images/pencils.jpg" />
 				</div>
-				<div class="uk-width-1-2@m uk-width-1-1@s uk-float-left">
-					<h2 id="aboutUs" class="uk-text-center">About Us</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed lectus volutpat mi egestas semper eu at eros. Mauris porta mattis augue, in pellentesque leo fermentum id. Praesent vel fringilla sapien. Praesent mattis, lorem non ornare varius, dui libero maximus sem, ut consectetur sem purus vel augue. Vestibulum nunc orci, interdum eget egestas sed, viverra in metus. Maecenas faucibus faucibus lorem commodo eleifend. Integer non porta eros. Aenean eget mattis lorem, nec sodales lectus. Suspendisse pulvinar, nisi at tempor egestas, neque lorem feugiat augue, tristique cursus est nunc et turpis. Donec iaculis sapien nec posuere varius. Donec efficitur eget ipsum convallis faucibus. In hac habitasse platea dictumst. Vestibulum dictum sit amet leo ut dapibus</p>
+			</div>
+		</div>
+		<h2 id="goals" class="uk-text-center">Our Goals</h2>
+		<hr>
+		<div class="uk-section uk-dark">
+			<div uk-scrollspy="cls: uk-animation-fade; target: > div >; delay: 1200; repeat: true">
+				<div class="uk-align-center" style="width:500px;">
+					<div>
+						<p class="goal">
+							<span style="color:#ece300;">Our goal is to</span> help businesses and individuals increase their web presence.
+						</p>
+					</div>
+					<div>
+						<p class="goal">
+							We have more than 10 years’ experience designing and developing websites for clients across all sectors, ranging from small boutique and start up companies to Larger organisations. 
+						</p>
+					</div>
+					<div>
+						<p class="goal">
+							Let us work with you to <span style="color:#ece300;">create your vision</span> and increase your  visibility to the largest possible audience through our specialist knowledge in website design, development and search engine optimisation. 
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
 		<h2 id="spec" class="uk-text-center">Our Specialities</h2>
 		<hr>
 		<div class="uk-section uk-dark">
-			<div uk-scrollspy="cls: uk-animation-fade; target: > div >; delay: 500; repeat: true">
+			<div uk-scrollspy="cls: uk-animation-fade; target: > div >; delay: 350; repeat: true">
 				<div class="uk-width-2-3@m uk-width-1-1@s uk-float-left ">
 					<img src="images/camera.jpg"/>
 				</div>
 				<div class="uk-width-1-3@m uk-width-1-1@s uk-float-right ">
 					<h3>Web Design</h3>
 					<hr>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed lectus volutpat mi egestas semper eu at eros. Mauris porta mattis augue, in pellentesque leo fermentum id. Praesent vel fringilla sapien. Praesent mattis, lorem non ornare varius, dui libero maximus sem, ut consectetur sem purus vel augue. Vestibulum nunc orci, interdum eget egestas sed, viverra in metus. Maecenas faucibus faucibus lorem commodo eleifend. Integer non porta eros. Aenean eget mattis lorem, nec sodales lectus. Suspendisse pulvinar, nisi at tempor egestas, neque lorem feugiat augue, tristique cursus est nunc et turpis. Donec iaculis sapien nec posuere varius. Donec efficitur eget ipsum convallis faucibus. In hac habitasse platea dictumst. Vestibulum dictum sit amet leo ut dapibus.</p>
+					<p>We have experience In designing and developing websites, from brochure style sites to more complex multi page and e-commerce websites. Whether you are a startup business, established company or individual we can help talk you through each stage of the design process, and work with you to create exactly what you are looking for. Whether that is to increase visibility to attract new customers, to display the services you offer or just give your website a fresh new look.  Our aim is to exceed our clients expectations every time and we will not stop until each aspect is perfect.</p>
 				</div>
 				<div class="uk-width-2-3@m uk-width-1-1@s uk-float-right ">
 					<img src="images/coffeeEdit.jpg"/>
@@ -126,15 +172,17 @@
 				<div class="uk-width-1-3@m uk-width-1-1@s uk-float-left ">
 					<h3>Branding</h3>
 					<hr>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed lectus volutpat mi egestas semper eu at eros. Mauris porta mattis augue, in pellentesque leo fermentum id. Praesent vel fringilla sapien. Praesent mattis, lorem non ornare varius, dui libero maximus sem, ut consectetur sem purus vel augue. Vestibulum nunc orci, interdum eget egestas sed, viverra in metus. Maecenas faucibus faucibus lorem commodo eleifend. Integer non porta eros. Aenean eget mattis lorem, nec sodales lectus. Suspendisse pulvinar, nisi at tempor egestas, neque lorem feugiat augue, tristique cursus est nunc et turpis. Donec iaculis sapien nec posuere varius. Donec efficitur eget ipsum convallis faucibus. In hac habitasse platea dictumst. Vestibulum dictum sit amet leo ut dapibus.</p>
+					<p>Your brand is how customers see you and how you see yourself, so it is vital that your brand is displaying your values and objectives this will help making your business memorable and instantly recognisable . A solid brand can not only help in marketing your business but also support recruitment, sales and help maintain a competitive advantage. </p>
 				</div>
 				<div class="uk-width-2-3@m uk-width-1-1@s uk-float-left ">
 					<img src="images/seo.jpg"/>
 				</div>
 				<div class="uk-width-1-3@m uk-width-1-1@s uk-float-right ">
-					<h3>Search Engine Optimisation</h3>
+					<h3>SEO</h3>
 					<hr>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed lectus volutpat mi egestas semper eu at eros. Mauris porta mattis augue, in pellentesque leo fermentum id. Praesent vel fringilla sapien. Praesent mattis, lorem non ornare varius, dui libero maximus sem, ut consectetur sem purus vel augue. Vestibulum nunc orci, interdum eget egestas sed, viverra in metus. Maecenas faucibus faucibus lorem commodo eleifend. Integer non porta eros. Aenean eget mattis lorem, nec sodales lectus. Suspendisse pulvinar, nisi at tempor egestas, neque lorem feugiat augue, tristique cursus est nunc et turpis. Donec iaculis sapien nec posuere varius. Donec efficitur eget ipsum convallis faucibus. In hac habitasse platea dictumst. Vestibulum dictum sit amet leo ut dapibus.</p>
+					<p>Search Engine Optimisation is a powerful method used to increase a website's visibility on search engines such as Google, Yahoo and Bing. We can help put your business out in front of the largest possible audience, not only displaying the products and services your business offers but ensuring you are found above your competitors. 
+						Let us help you get to the top of the major search engines and stay there. 
+					</p>
 				</div>
 			</div>
 		</div>
